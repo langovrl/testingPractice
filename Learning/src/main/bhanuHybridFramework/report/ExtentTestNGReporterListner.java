@@ -29,8 +29,8 @@ public class ExtentTestNGReporterListner extends tb implements IReporter {
 	private void init() {
 		extent = new ExtentReports();
 		ExtentSparkReporter spark = new ExtentSparkReporter(System.getProperty("user.dir") + "//" + "spark.html");
-		spark.config().setDocumentTitle("Sport Clip POC Test DocumentTitle - Created by Vaibhav");
-		spark.config().setReportName("Extemt Practice Report");
+		spark.config().setDocumentTitle("Extent Practice - Created by Vaibhav");
+		spark.config().setReportName("Extent Practice Report");
 		extent.attachReporter(spark);
 		extent.setReportUsesManualConfiguration(true);
 
