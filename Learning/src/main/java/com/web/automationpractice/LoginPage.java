@@ -22,35 +22,35 @@ public class LoginPage extends TestBase {
 	}
 
 	@FindBy(xpath="//*[@id='email']")
-	WebElement userNameInput;
+	public WebElement userNameInput;
 
 	@FindBy(xpath="//*[@id='passwd']")
-	WebElement passwordInput;
+	public WebElement passwordInput;
 	
 	@FindBy(xpath="//*[@name='SubmitLogin']")
-	WebElement loginButton; 
+	public WebElement loginButton; 
 
 	
 	@FindBy(xpath="//*[@class='logout']")
-	WebElement logoutButton;
+	public WebElement logoutButton;
 	
 	@FindBy(xpath="//*[@class='product-container']")
-	WebElement product;
+	public WebElement product;
 	
 	@FindBy(xpath="//*[@title='Women']")
-	WebElement womanTab;
+	public WebElement womanTab;
 	
 	@FindBy(xpath="//*[@title='Add to cart']")
-	WebElement addToCart;
+	public WebElement addToCart;
 	
 	@FindBy(xpath="//*[@title='Continue shopping']")
-	WebElement continueShoppingButton;
+	public WebElement continueShoppingButton;
 	
 	@FindBy(xpath="//*[@title='View my shopping cart']")
-	WebElement cartButton;
+	public WebElement cartButton;
 	
 	@FindBy(xpath="//*[@class='cart_quantity_delete']")
-	WebElement deleteCart;
+	public WebElement deleteCart;
 	
 	
 	public void loginToApplication(String username, String password) throws IOException{
